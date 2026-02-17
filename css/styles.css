@@ -147,3 +147,73 @@ ul.movie-info {
     padding-left: 0;
     margin-left: 0;
 }
+
+.create-list-btn {
+    color: white;
+    background-color: rgb(63, 63, 63);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 18px;
+    font-size: 16px;
+}
+
+.create-list-btn:hover {
+    background-color: #202020;
+}
+
+#create-list-popup {
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+body:has(#create-list-popup:popover-open) > *:not(#create-list-popup) {
+    filter: blur(3px);
+}
+
+body:has(#create-list-popup:popover-open) .create-list-btn {
+    display: none;
+}
+
+#create-list-popup h2 {
+    margin-top: 0;
+}
+
+.movie-selection {
+    margin-bottom: 20px;
+}
+
+.movie-selection label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.movie-selection select,
+.movie-selection textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+#user-list-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#user-list-form button[type="submit"]:hover {
+    background-color: #202020;
+}

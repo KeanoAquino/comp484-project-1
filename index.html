@@ -55,6 +55,7 @@
                         The art style is absolutely stunning on every level, and the music hits right in the feels every single time. It is a crazy adventure that just 
                         feels like a warm hug. It is a total classic that I can put on anytime and never get bored of it.
                     </p>
+                    <!-- button element: clickable element to reveal more of the review -->
                     <button class="show-more-btn">Show More</button>
                     <p class="movie-director">
                         <b>Director:</b> <a href="https://www.imdb.com/name/nm0594503/" target="_blank">Hayao Miyazaki</a>
@@ -134,8 +135,37 @@
                 </div>
             </li>
             <hr/>
-        </ol> 
+        </ol>
     </main>
+    
+    <!-- button element: clickable element that triggers popover -->
+    <!-- popovertarget attribute: triggers the popover -->
+    <button popovertarget="create-list-popup" class="create-list-btn">
+        Make Your List
+    </button>
+    
+    <!-- popover attribute: creates dismissible overlay -->
+    <div id="create-list-popup" popover>
+        <h2>Create Your Top 5 Ghibli List</h2>
+        <form id="user-list-form">
+            <label>Your Name:
+                <!-- pattern attribute: validates name format (letters, spaces, hyphens, apostrophes only) -->
+                <input
+                type="text"
+                id="user-name"
+                required
+                maxlength="50"
+                pattern="[A-Za-z\s'\-]{2,50}" 
+                title="Name must be 2-50 characters, letters only"
+                >
+            </label>
+            <div id="movie-selections-container"></div>
+            <!-- button element: submits the form when clicked -->
+            <button type="submit">Generate My List</button>
+        </form>
+    </div>
+    
     <script src="./js/script.js"></script>
+    <script src="./js/list-creator.js"></script>
 </body>
 </html>
