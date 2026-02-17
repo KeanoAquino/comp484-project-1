@@ -51,7 +51,7 @@ for (let i = 1; i <= 5; i++) {
     select.className = 'movie-dropdown';
     select.required = true;
     
-    // Add default option
+    // option element: defines selectable choices in the dropdown
     const defaultOption = document.createElement('option');
     defaultOption.value = '';
     defaultOption.textContent = 'Select a movie...';
@@ -164,4 +164,4 @@ document.getElementById('user-list-form').addEventListener('submit', function(e)
     window.location.href = `user-list.html?${params.toString()}`;
 });
 
-}); // End DOMContentLoaded
+});

@@ -109,7 +109,7 @@ body {
   object-fit: cover;
 }
 
-.movie-visual iframe {
+.movie-visual object {
   height: 100%;
   aspect-ratio: 16 / 9;
   border: none;

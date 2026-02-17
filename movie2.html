@@ -20,11 +20,13 @@
     <main>
         <div class="movie-visual">
             <img src="./assets/images/spirited-away.jpg" alt="Spirited Away Poster"/>
-            <iframe
-            src="https://www.youtube.com/embed/ByXuk9QqQkk?si=wnXT5wSHMQE6FvSG&autoplay=1&mute=1&loop=1&playlist=ByXuk9QqQkk"
-            allow="autoplay"
-            allowfullscreen
-            ></iframe>
+            <!-- object element: embeds external YouTube video content -->
+            <object
+            data="https://www.youtube.com/embed/ByXuk9QqQkk?si=wnXT5wSHMQE6FvSG&autoplay=1&mute=1&loop=1&playlist=ByXuk9QqQkk"
+            type="text/html"
+            >
+                <p>Your browser doesn't support embedded videos.</p>
+            </object>
         </div>
         <hr/>
         <p class="movie-synopsis">

@@ -20,11 +20,13 @@
     <main>
         <div class="movie-visual">
             <img src="./assets/images/howls-moving-castle.jpg" alt="Howl's Moving Castle Poster"/>
-            <iframe
-            src="https://www.youtube.com/embed/DJeUGpcle8s?si=wnXT5wSHMQE6FvSG&autoplay=1&mute=1&loop=1&playlist=DJeUGpcle8s"
-            allow="autoplay"
-            allowfullscreen
-            ></iframe>
+            <!-- object element: embeds external YouTube video content -->
+            <object
+            data="https://www.youtube.com/embed/DJeUGpcle8s?si=wnXT5wSHMQE6FvSG&autoplay=1&mute=1&loop=1&playlist=DJeUGpcle8s"
+            type="text/html"
+            >
+                <p>Your browser doesn't support embedded videos.</p>
+            </object>
         </div>
         <hr/>
         <p class="movie-synopsis">

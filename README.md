@@ -12,8 +12,9 @@ pages: https://keanoaquino.github.io/comp484-project-1/
    - Location: Dynamically created in `js/list-creator.js` (inside the `forEach(movie => {...})` loop)
    - Description: Defines each selectable movie choice within the dropdown menus (24 Ghibli movies)
 
-3. **output element**
-   - 
+3. **object element**
+   - Location: All movie pages (`movie1.html` - `movie5.html`)
+   - Description: Embeds YouTube video trailers for each movie 
 
 ### Attributes Implemented:
 
