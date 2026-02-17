@@ -1,0 +1,89 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+.poster {
+    height: 250px;
+}
+
+.movie-ranking {
+    list-style: none;
+    padding: 0;
+}
+
+.movie {
+    display: flex;
+    /* border: 8px solid black; */
+    gap: 16px;
+    padding: 16px;
+}
+
+.movie-content {
+    display: flex;
+    /* border: 8px solid black; */
+    flex-direction: column;
+}
+
+.movie-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.movie-synopsis {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.movie-review {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.movie-review.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #246eb7;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.show-more-btn:hover {
+    color: #003577;
+}
+
+.movie-director {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.movie-director a {
+    color: #246eb7;
+    text-decoration: none;
+}
+
+.movie-director a:hover {
+    color: #003577;
+    text-decoration: none;
+}
