@@ -11,6 +11,7 @@ body {
     max-width: 900px;
     min-width: 500px;
     margin: 0 auto;
+    /* border: 8px solid black; */
 }
 
 .poster {
@@ -38,6 +39,11 @@ body {
 .movie-title {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.movie-title a {
+    color: black;
+    text-decoration: none;
 }
 
 .movie-synopsis {
@@ -86,4 +92,58 @@ body {
 .movie-director a:hover {
     color: #003577;
     text-decoration: none;
+}
+
+
+
+.movie-visual {
+  display: flex;
+  gap: 20px;
+  height: 350px;
+}
+
+.movie-visual img {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.movie-visual iframe {
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.movie-stars-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-stars {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.movie-stars a {
+    color: #246eb7;
+    text-decoration: none;
+}
+
+.movie-stars a:hover {
+    color: #003577;
+    text-decoration: none;
+}
+
+ul.movie-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 200px;
+    padding-left: 0;
+    margin-left: 0;
 }
